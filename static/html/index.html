@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/social-18/512/YouTube-2-256.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <title>Youtube MP3 Downloader</title>
+</head>
+<body>
+    <div class="titles">
+        <div class="main-title">
+            <h1 class="text-light">Youtube MP3 Downloader</h1>
+        </div>
+        <div class="small-title">
+            <div id="main-title-bottom">
+                <h2 class="text-light">Free and No ads</h2>
+            </div>
+        </div>
+    </div>
+    <div class="inputs">
+        <div class="input">      
+            <input type="text" id="url" placeholder="ex:  youtu.be/HYfkUCKiVGw" autocomplete="off">
+        </div>
+        <div class="button">
+            <button class="submit">
+                Go
+            </button>
+        </div>
+    </div>
+    <div class="gradient"></div>
+    <div id="error" class="modal">
+        <p>아무것도 입력안하면 모를줄 알았냐</p>
+    </div>
+    <div id="browser" class="modal">
+        <p>이 웹페이지는 크롬을 권장합니다</p>
+        <p>
+            <a href="https://www.google.com/intl/ko/chrome/">
+                크롬 다운로드 바로가기
+            </a>
+        </p>
+    </div>
+
+    <script src="js/indexSubmit.js"></script>
+    <script src="js/checkModal.js"></script>
+</body>
+</html>

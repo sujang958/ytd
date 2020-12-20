@@ -1,0 +1,17 @@
+{
+  "name": "ytd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "short-id": "0.1.0-1",
+    "ytdl-core": "^4.2.1"
+  }
+}
