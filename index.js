@@ -19,7 +19,7 @@ app.get('/process', (req, res) => {
     var youtube_url = youtube_parser(req.query.url)
     var gen_id = id.generate()
     var ytdl_pipe = ytdl(`https://www.youtube.com/watch?v=${youtube_url}`, { filter: 'audioonly'})
-    .pipe(fs.createWriteStream(`${__dirname}/static/audio/${gen_id}.mp3`))
+    .pipe(fs.createWriteStream(`${__dirname}/static/audio/${gen_id}.wav`))
     
     ytdl.getInfo(`https://www.youtube.com/watch?v=${youtube_url}`)
     .then(info => {
@@ -27,8 +27,8 @@ app.get('/process', (req, res) => {
         <script>
             try {
                 var a = document.createElement("a");
-                a.href = "/audio/${gen_id}.mp3"
-                a.download = "${info.videoDetails.title}.mp3"
+                a.href = "/audio/${gen_id}.wav"
+                a.download = "${info.videoDetails.title}.wav"
                 a.click();
 
                 alert("성공적으로 다운로드를 마쳤습니다");
