@@ -34,7 +34,7 @@ app.get('/process', (req, res) => {
                 alert("성공적으로 다운로드를 마쳤습니다");
                 location.href = '/'
             } catch (e) {
-                alert(e)
+                alert(e.toString());
             }
         </script>
         `)
