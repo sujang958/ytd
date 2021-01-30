@@ -50,7 +50,7 @@ function sendDownloadRedirect(downloadURL, downloadName) {
     <script>
         try {
             var a = document.createElement("a");
-            a.href = "${downloadURL}
+            a.href = "${downloadURL}";
             a.download = "${downloadName}"
             a.click();
 
